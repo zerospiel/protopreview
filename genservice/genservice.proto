@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package generated.service.v1;
+
+option go_package = "github.com/zerospiel/protopreview/genservice;generated_service_v1";
+
+message GS {
+    string s = 1;
+}
+
+service GeneratedService {
+    rpc FooBar(GS) returns (GS);
+}

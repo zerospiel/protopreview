@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package generated.v1;
+
+option go_package = "github.com/zerospiel/protopreview/generated;generated_v1";
+
+message GG {
+    string s = 1;
+}

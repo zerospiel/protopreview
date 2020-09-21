@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package simple.service.v1;
+
+option go_package = "github.com/zerospiel/protopreview/simservice;simple_service_v1";
+
+message SS {
+    string s = 1;
+}
+
+service SimpleService {
+    rpc FooBar(SS) returns (SS);
+}
